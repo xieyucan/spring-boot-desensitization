@@ -11,22 +11,28 @@
     <groupId>com.xieahui.springboot</groupId>
     <artifactId>spring-boot-desensitization</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>spring-boot-desensitization</name>
     <description>spring-boot-desensitization</description>
+
+    <modules>
+        <module>spring-boot-desensitization-starter</module>
+        <module>spring-boot-desensitization-demo</module>
+    </modules>
+
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

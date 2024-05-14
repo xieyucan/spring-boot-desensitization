@@ -1,0 +1,9 @@
+<configuration>
+
+    <include resource="logback-desensitization-included.xml"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
